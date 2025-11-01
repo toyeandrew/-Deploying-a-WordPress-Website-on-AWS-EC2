@@ -1,19 +1,19 @@
 # How-I-deployed-WordPress-on-AWS-EC2
 Project: Deploying a WordPress Blog on AWS EC2 using Apache, PHP, and MySQL
-# 🚀 Deploying a WordPress Website on AWS EC2
+#  Deploying a WordPress Website on AWS EC2
 
-## 📖 Overview
+# Overview
 This project demonstrates how to deploy a **WordPress blog** on an **AWS EC2 instance** using Apache, PHP, and MySQL.  
 It’s part of my hands-on AWS DevOps learning journey to build real-world cloud skills.
 
 ---
 
-## 🧱 Architecture Diagram
+#  Architecture Diagram
 ![Architecture Diagram](./architecture-diagram.png)
 
 ---
 
-## 🧰 AWS Services Used
+# AWS Services Used
 - **EC2** – Virtual server for hosting WordPress  
 - **Security Groups** – Control inbound/outbound traffic  
 - **Elastic IP** – Static IP for persistent web access  
@@ -23,7 +23,7 @@ It’s part of my hands-on AWS DevOps learning journey to build real-world cloud
 
 ---
 
-## ⚙️ Tech Stack
+# Tech Stack
 - **OS:** Amazon Linux 2
 - **Web Server:** Apache HTTPD
 - **App:** WordPress CMS
@@ -34,7 +34,7 @@ It’s part of my hands-on AWS DevOps learning journey to build real-world cloud
 
  Setup Steps
 
-### 1️⃣ Launch EC2 Instance
+ 1️⃣ Launch EC2 Instance
 - Choose Amazon Linux 2 (t2.micro – Free Tier)
 - Configure security group:
   - SSH (22) – My IP
