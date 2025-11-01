@@ -1,6 +1,5 @@
-# How-I-deployed-WordPress-on-AWS-EC2
+# Deploying a WordPress Website on AWS EC2
 Project: Deploying a WordPress Blog on AWS EC2 using Apache, PHP, and MySQL
-#  Deploying a WordPress Website on AWS EC2
 
 # Overview
 This project demonstrates how to deploy a **WordPress blog** on an **AWS EC2 instance** using Apache, PHP, and MySQL.  
