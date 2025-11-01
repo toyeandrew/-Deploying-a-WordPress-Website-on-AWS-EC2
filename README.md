@@ -45,12 +45,12 @@ It’s part of my hands-on AWS DevOps learning journey to build real-world cloud
   ssh -i "my-key.pem" ec2-user@<Public-IP>
 
 2️⃣ Install Apache, PHP, and MySQL
--sudo yum update -y
--sudo yum install httpd mariadb-server php php-mysqlnd -y
--sudo systemctl start httpd
--sudo systemctl enable httpd
--sudo systemctl start mariadb
--sudo systemctl enable mariadb
+- sudo yum update -y
+- sudo yum install httpd mariadb-server php php-mysqlnd -y
+- sudo systemctl start httpd
+- sudo systemctl enable httpd
+- sudo systemctl start mariadb
+- sudo systemctl enable mariadb
 
 3️⃣ Create WordPress Database
 -sudo mysql -u root -p
