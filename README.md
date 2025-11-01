@@ -80,4 +80,4 @@ define( 'DB_HOST', 'localhost' );
 5️⃣ Restart Apache
 sudo systemctl restart httpd
 
-Visit: http: <EC2-Public-IP>
+Visit: http://EC2-Public-IP
