@@ -45,39 +45,39 @@ It’s part of my hands-on AWS DevOps learning journey to build real-world cloud
   ssh -i "my-key.pem" ec2-user@<Public-IP>
 
 2️⃣ Install Apache, PHP, and MySQL
-sudo yum update -y
-sudo yum install httpd mariadb-server php php-mysqlnd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
-sudo systemctl start mariadb
-sudo systemctl enable mariadb
+-sudo yum update -y
+-sudo yum install httpd mariadb-server php php-mysqlnd -y
+-sudo systemctl start httpd
+-sudo systemctl enable httpd
+-sudo systemctl start mariadb
+-sudo systemctl enable mariadb
 
 3️⃣ Create WordPress Database
-sudo mysql -u root -p
-CREATE DATABASE wordpress;
-CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'strongpassword';
-GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;
+-sudo mysql -u root -p
+-CREATE DATABASE wordpress;
+-CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'strongpassword';
+-GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
+-FLUSH PRIVILEGES;
+-EXIT;
 
 4️⃣ Install and Configure WordPress
-cd /var/www/html
-sudo wget https://wordpress.org/latest.tar.gz
-sudo tar -xzf latest.tar.gz
-sudo mv wordpress/* .
-sudo rm -rf wordpress latest.tar.gz
-sudo chown -R apache:apache /var/www/html/
-sudo chmod -R 755 /var/www/html/
-sudo cp wp-config-sample.php wp-config.php
-sudo nano wp-config.php
+-cd /var/www/html
+-sudo wget https://wordpress.org/latest.tar.gz
+-sudo tar -xzf latest.tar.gz
+-sudo mv wordpress/* .
+-sudo rm -rf wordpress latest.tar.gz
+-sudo chown -R apache:apache /var/www/html/
+-sudo chmod -R 755 /var/www/html/
+-sudo cp wp-config-sample.php wp-config.php
+-sudo nano wp-config.php
 
 Update the DB settings:
-define( 'DB_NAME', 'wordpress' );
-define( 'DB_USER', 'wpuser' );
-define( 'DB_PASSWORD', 'strongpassword' );
-define( 'DB_HOST', 'localhost' );
+-define( 'DB_NAME', 'wordpress' );
+-define( 'DB_USER', 'wpuser' );
+-define( 'DB_PASSWORD', 'strongpassword' );
+-define( 'DB_HOST', 'localhost' );
 
 5️⃣ Restart Apache
-sudo systemctl restart httpd
+-sudo systemctl restart httpd
 
 Visit: http://EC2-Public-IP
